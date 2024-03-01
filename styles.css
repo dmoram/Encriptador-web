@@ -1,9 +1,75 @@
-.header{
-    
+.header {
 }
 
-h1{
-    text-align: center;
-    font-size: 40;
-    
+.main {
+  background-color: #e9ecf8;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.panel_entrada {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+  align-items: center;
+}
+
+.input_texto {
+  width: 90%;
+  height: 550px;
+  background-color: #e9ecf8;
+  border-radius: 10px;
+  border-width: 0px;
+  color: darkblue;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input_texto::placeholder { 
+  color: #0A3871;
+}
+
+.alerta {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0A3871;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+
+.caja_botones {
+  display: flex;
+  flex-direction: row;
+}
+
+.boton {
+  padding: 15px 60px;
+  margin-top: 20px;
+  border-radius: 15px;
+  color: #e9ecf8;
+  background-color: darkblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.boton:hover {
+    background-color: lightblue; /* Cambiar el color al pasar el mouse */
+  }
+
+.panel_salida {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  border-color: red;
+  background-color: #0A3871;
 }
