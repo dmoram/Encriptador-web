@@ -34,8 +34,8 @@ function encriptarTexto() {
                 break;
         }
     }
-    console.log(texto_encriptado);
-    alert(texto_encriptado)
+    imprimirTexto(texto_encriptado);
+    alert(texto_encriptado);
 }
 
 function desencriptarTexto() {
@@ -54,7 +54,10 @@ function desencriptarTexto() {
 function vaciarPanel(){
     let panel = document.getElementById("panel_derecho");
     let imagen = document.getElementById("muñeco");
-    let texto = document.getElementById("mensaje");
     panel.removeChild(imagen);
-    panel.removeChild(texto);
+}
+
+function imprimirTexto(texto){
+    let txt = document.getElementById("alerta");
+    txt.innerHTML = texto;
 }
