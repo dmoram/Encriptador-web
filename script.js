@@ -34,8 +34,7 @@ function encriptarTexto() {
                 break;
         }
     }
-    imprimirTexto(texto_encriptado);
-    alert(texto_encriptado);
+    imprimirTexto(texto_encriptado, "Texto encriptado");
 }
 
 function desencriptarTexto() {
@@ -47,17 +46,25 @@ function desencriptarTexto() {
     texto_desencriptado = texto.replace("ai","a").replace("enter","e").replace("imes","i").replace("ober","o").replace("ufat","u");
     
     
-    console.log(texto_desencriptado);
-    alert(texto_desencriptado)
+    imprimirTexto(texto_desencriptado, "Texto desencriptado");
 }
 
 function vaciarPanel(){
     let panel = document.getElementById("panel_derecho");
     let imagen = document.getElementById("muñeco");
-    panel.removeChild(imagen);
+    
+    if (imagen) { // Verifica si la imagen existe antes de intentar eliminarla
+        panel.removeChild(imagen);
+    }
+
+    let entrada = document.getElementById("input_texto")
+    entrada.value="";
 }
 
-function imprimirTexto(texto){
+
+function imprimirTexto(texto, tit){
     let txt = document.getElementById("alerta");
     txt.innerHTML = texto;
+    let titulo = document.getElementById("titulo_salida")
+    titulo.innerHTML = tit;
 }
