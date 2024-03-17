@@ -1,5 +1,21 @@
-.header {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
+
 
 .main {
   background-color: #e9ecf8;
@@ -7,7 +23,9 @@
 
 h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
+  padding: 20px;
+  color: #0A3871;
 }
 .container {
   display: flex;
@@ -18,14 +36,14 @@ h1 {
 .panel_entrada {
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 500px;
   
   align-items: center;
 }
 
 .input_texto {
   width: 600px;
-  height: 550px;
+  height: 400px;
   background-color: #e9ecf8;
   border-radius: 10px;
   border-width: 0px;
@@ -70,7 +88,7 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 40%;
-  height: 550px;
+  height: 500px;
   padding-top: 50px;
   justify-content: flex-start;
   align-items:center;

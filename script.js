@@ -38,13 +38,14 @@ function encriptarTexto() {
 }
 
 function desencriptarTexto() {
-    // Lógica para desencriptar el texto
     texto = document.getElementById("input_texto").value;
 
-    let texto_desencriptado = "";
-
-    texto_desencriptado = texto.replace("ai","a").replace("enter","e").replace("imes","i").replace("ober","o").replace("ufat","u");
-    
+    let texto_desencriptado = texto
+        .replace(/ai/g, "a")
+        .replace(/enter/g, "e")
+        .replace(/imes/g, "i")
+        .replace(/ober/g, "o")
+        .replace(/ufat/g, "u");
     
     imprimirTexto(texto_desencriptado, "Texto desencriptado");
 }
